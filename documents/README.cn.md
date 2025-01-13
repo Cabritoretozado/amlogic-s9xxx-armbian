@@ -1,6 +1,10 @@
 # Armbian 构建及使用方法
 
-查看英文说明 | [View English description](README.md)
+查看英文说明 | [View English description](README.md)- Download the [RKDevTool](https://github.com/ophub/kernel/releases/download/tools/FastRhino_r68s_RKDevTool_Release_v2.86___DriverAssitant_v5.1.1.tar.gz) tool and driver, unzip and install the DriverAssistant driver program, and open the RKDevTool tool .(Note, please use version 2.86 tool instead of 2.92, version 2.92 will crash when flashing) 
+ - tspi in the shutdown state, press and hold the Recovery key and insert the type-c data cable. Release the Recovery key after RKDevTool prompts `A LOADER device was found'. Right click to add item. 
+ - Address `0x00000000`, name `system`, path select the `Armbian.img` system to be flashed. 
+ - Click Execute and wait for the progress to complete. 
+ 
 
 Github Actions 是 Microsoft 推出的一项服务，它提供了性能配置非常不错的虚拟服务器环境，基于它可以进行构建、测试、打包、部署项目。对于公开仓库可免费无时间限制地使用，且单次编译时间长达 6 个小时，这对于编译 Armbian 来说是够用的（我们一般在3小时左右可以完成一次编译工作）。分享只是为了交流经验，不足的地方请大家理解，请不要在网络上发起各种不好的攻击行为，也不要恶意使用 GitHub Actions。
 
